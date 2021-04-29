@@ -22,14 +22,14 @@ else{
 ```php
 $validation->validate('name','Name','required');
 $validation->validate('email','Email','required|valid_email|is_unique:users.email');
+$validation->validate('url','Url','required|valid_url');
 
+$validation->validate('username','Username','required|min_len[4]|max_len[8]');
+$validation->validate('firstname','Firstname','required|is_alpha');
+$validation->validate('username','Username','required|is_alphanum');
 ```
+5. Get array of errors from validation
+```php
+$validation->validationErrors();
 ```
-
-
-
-
-
-```
-
 
