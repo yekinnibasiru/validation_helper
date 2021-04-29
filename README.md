@@ -18,5 +18,18 @@ else{
   //Perform actions if there is no errors
 }
 ```
+4. List of rules you can call
+```php
+$validation->validate('name','Name','required');
+$validation->validate('email','Email','required|valid_email|is_unique:users.email');
+
+```
+```
+
+
+
+
+
+```
 
 
