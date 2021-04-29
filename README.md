@@ -11,7 +11,12 @@ $validation->validate('formfieldname','label','rules','custom errors');
 ```
 3. Check if there is errors by calling
 ```php
-$validation->run();
+if($validation->run()){
+  echo "Form Submitted";
+}
+else{
+  //Perform actions if there is no errors
+}
 ```
 
 
